@@ -33,7 +33,7 @@ describe('server.js', () => {
     it('should return { characterRouter: \'up\' }', async () => {
       const response = await request(server).get('/api/characters/status');
 
-      expect(response.body.characterRouter).toBe('up');
+      expect(response.body.charactersRouter).toBe('up');
     });
   });
 });
